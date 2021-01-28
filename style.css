@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
 }
 
 .topnav {
@@ -38,15 +43,24 @@ body {
   color: white;
 }
 
+
+
+/*--------------footer------------*/
 footer {
+  height: 48px;
+  font-size: 11px;
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color:  #4CAF50;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
 }
 
-footer a.icon {
-  background-color: black;
-  
+footer > a {
+  margin: 0 15px;
 }
 
+.fab {
+  font-size: 2.5em;
+}
