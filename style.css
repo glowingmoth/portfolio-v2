@@ -38,3 +38,15 @@ body {
   color: white;
 }
 
+footer {
+  display: flex;
+  
+  background-color:  #4CAF50;
+  padding: 14px 16px;
+}
+
+footer a.icon {
+  background-color: black;
+  
+}
+
