@@ -1,4 +1,5 @@
 body {
+  background-color: #131417;
   margin: 0;
   font-family: sans-serif;
 }
@@ -30,16 +31,29 @@ body {
 }
 
 h1 {
+  color: white;
   text-align: center;
 }
 
 a {
-  color: black;
+  color: #5a5f73;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5a5f73;
+}
+
+p {
+  color: #5a5f73;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #1e1f26;
+  background-color: #5a5f73;
   position: relative;
 }
 
@@ -69,7 +83,7 @@ a {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #1e1f26;
   color: white;
 }
 
