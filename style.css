@@ -3,6 +3,14 @@ body {
   font-family: sans-serif;
 }
 
+.main-content {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
 a {
   color: black;
 }
@@ -26,7 +34,7 @@ a {
 }
 
 .topnav a.icon {
-  background: black;
+  /* background: black; */
   display: block;
   position: absolute;
   right: 0;
@@ -53,7 +61,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color:  #4CAF50;
+  /* background-color:  #4CAF50; */
   /* padding: 14px 16px; */
 }
 
