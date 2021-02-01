@@ -37,6 +37,35 @@ body {
   max-height: 100%;
 }
 
+#name { 
+  width: 100%;
+  max-width: 960px;
+  border-color: #5a5f73;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#email { 
+  width: 100%;
+  max-width: 960px;
+  border-color: #5a5f73;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#message {
+  width: 100%;
+  max-width: 960px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #5a5f73;
+  padding: 5px;
+}
+
+.send-button {
+  padding: 5px;
+}
+
 .basic-grid > img{
   object-fit: cover;
   width: 100%;
