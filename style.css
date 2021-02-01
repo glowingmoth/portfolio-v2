@@ -75,6 +75,10 @@ form {
   font-family: Arial;
 }
 
+#rc-acnchor-container {
+  width: 100%;
+}
+
 .send-button {
   padding: 5px;
 }
