@@ -4,6 +4,12 @@ body {
   font-family: sans-serif;
 }
 
+canvas {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+
 .main-content {
   text-align: center;
   margin: 48px 20px;
