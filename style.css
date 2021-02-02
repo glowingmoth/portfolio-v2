@@ -89,6 +89,12 @@ form {
   max-height: 100%;
 }
 
+.basic-grid > .card > iframe {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
 .three-d-art > .card > img {
   object-fit: cover;
   width: 100%;
@@ -96,6 +102,12 @@ form {
 }
 
 .three-d-art {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+.game-dev {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
@@ -113,7 +125,7 @@ form {
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  transition: all 500ms;
+  /* transition: all 500ms; */
   overflow: hidden;
   padding: 5px;
 }
