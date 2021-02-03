@@ -7,7 +7,7 @@ const renderer = new THREE.WebGLRenderer();
 const fov = 60;
 const aspect = 2;
 const near = 0.1;
-const far = 200;
+const far = 500;
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 camera.position.z = 30;
 
@@ -26,9 +26,9 @@ cameraPole.add(camera);
   camera.add(light);
 }
 
-const boxWidth = 1;
-const boxHeight = 1;
-const boxDepth = 1;
+const boxWidth = 0.02;
+const boxHeight = 0.02;
+const boxDepth = 0.02;
 const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
 
 function rand(min, max) {
@@ -53,8 +53,8 @@ window.addEventListener('resize', function()
   camera.updateProjectionMatrix();
 });
 
-const axesHelper = new THREE.AxesHelper( 5 );
-scene.add( axesHelper );
+// const axesHelper = new THREE.AxesHelper( 5 );
+// scene.add( axesHelper );
 
 
 
@@ -78,7 +78,7 @@ controls.update();
 
 const numObjects = 100;
 for (let i = 0; i < numObjects; ++i) {
-  const material = new THREE.MeshBasicMaterial( { 
+  const material = new THREE.MeshPhongMaterial( { 
     color: 'white' 
   } );
   
@@ -96,6 +96,7 @@ const animate = function () {
 
   // cube.rotation.x += 0.01;
   // cube.rotation.y += 0.01;
+  cameraPole.rotation.y += 0.001;
 
   renderer.render( scene, camera );
 };
