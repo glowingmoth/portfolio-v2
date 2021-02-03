@@ -2,7 +2,8 @@ import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three/examples/jsm/loaders/GLTFLoader.js'; 
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({alpha: true});
+renderer.setClearColor( 0x000000, 0 );
 
 const fov = 60;
 const aspect = 2;
@@ -12,7 +13,10 @@ const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 camera.position.z = 30;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color( 0x131417)
+// scene.background = new THREE.Color( 0x131417)
+
+
+
 
 const cameraPole = new THREE.Object3D();
 scene.add(cameraPole);
