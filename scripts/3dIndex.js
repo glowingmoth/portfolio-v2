@@ -5,7 +5,7 @@ import { GLTFLoader } from 'https://unpkg.com/three/examples/jsm/loaders/GLTFLoa
 const renderer = new THREE.WebGLRenderer({alpha: true});
 renderer.setClearColor( 0x000000, 0 );
 
-const fov = 60;
+const fov = 45;
 const aspect = 2;
 const near = 0.1;
 const far = 500;
@@ -30,9 +30,9 @@ cameraPole.add(camera);
   camera.add(light);
 }
 
-const boxWidth = 0.02;
-const boxHeight = 0.02;
-const boxDepth = 0.02;
+const boxWidth = 0.04;
+const boxHeight = 0.04;
+const boxDepth = 0.04;
 const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
 
 function rand(min, max) {
