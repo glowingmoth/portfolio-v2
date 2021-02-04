@@ -9,20 +9,34 @@
 </head>
 <body>
   <script src="scripts/main.js"></script>
-  <div class="topnav">
-    <a href="index.html" class="active">Thomas Doig</a>
-    <div id="myLinks">
-      <a href="about.html">About</a>
-      <a href="3d-art.html">3D Art</a>
-      <a href="web-development.html">Web Development</a>
-      <a href="game-development.html">Game Development</a>
-      <a href="contact.html">Contact</a>
+  <nav class="topnav">
+    <div class="container navbar-wrapper">
+      <a href="index.html" id="my-name">Thomas Doig's Portfolio</a>
+      <div id="horizontal-links">
+        <a href="web-development.html">Web Development</a>
+        <a href="game-development.html">Game Development</a>
+        <a href="3d-art.html">3D Art</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="myLinks">
+        <a href="web-development.html">Web Development</a>
+        <a href="game-development.html">Game Development</a>
+        <a href="3d-art.html">3D Art</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div id="burger">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div id="cross">
+          <i class="fas fa-times" ></i>
+        </div> 
+      </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <div class="main-content">
+  </nav>
+  <div class="main-content container">
     <h1>About Page</h1>
     <img src="./images/myAvatar.jpg" width="150px" alt="Thomas Doig">
     <p>
