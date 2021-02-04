@@ -10,26 +10,33 @@
 <body>
   <script src="scripts/main.js"></script>
   <nav class="topnav">
-    <div id="horizontal-links">
-      <a href="web-development.html">Web Development</a>
-      <a href="game-development.html">Game Development</a>
-      <a href="3d-art.html">3D Art</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <div class="container navbar-wrapper">
+      <a href="index.html" id="my-name">Thomas Doig's Portfolio</a>
+      <div id="horizontal-links">
+        <a href="web-development.html">Web Development</a>
+        <a href="game-development.html">Game Development</a>
+        <a href="3d-art.html">3D Art</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="myLinks">
+        <a href="web-development.html">Web Development</a>
+        <a href="game-development.html">Game Development</a>
+        <a href="3d-art.html">3D Art</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div id="burger">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div id="cross">
+          <i class="fas fa-times" ></i>
+        </div> 
+      </a>
     </div>
-    <div id="myLinks">
-      <a href="web-development.html">Web Development</a>
-      <a href="game-development.html">Game Development</a>
-      <a href="3d-art.html">3D Art</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars" id="burger"></i>
-      <i class="fas fa-times" id="cross"></i>
-    </a>
   </nav>
-  <div class="main-content">
+  <div class="main-content container">
     <h1>Web Development</h1>
     <p>
       Here you will find different web development projects I have been involved in. Some are team based and others are my own work.

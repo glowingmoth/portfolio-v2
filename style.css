@@ -27,13 +27,22 @@ canvas {
 
 .main-content {
   text-align: center;
-  margin: 48px 20px;
+  margin: 48px 0;
 }
 
-.main-content > p {
+.container {
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-wrapper {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .basic-grid {
@@ -193,24 +202,33 @@ p {
 }
 
 /* ------------------------Navbars--------------------- */
+#horizontal-links {
+  display: none;
+}
 
 #my-name {
   color: whitesmoke;
   font-size: 1.7em;
-  padding-top: 5px;
   font-family: 'Pacifico', cursive;
   font-family: 'Caveat', cursive;
 }
 
-@media only screen and (max-width: 960px) {
-  #horizontal-links {
-    display: none;
-  }
-
+.topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:#1e1f26;
+  height: 48px
 }
 
 @media only screen and (min-width: 960px) {
 
+  #horizontal-links {
+   
+    
+    display: block;
+  }
 
   #horizontal-links > a {
     text-decoration: none;
@@ -222,7 +240,8 @@ p {
   }
 
   #horizontal-links > a:hover {
-    background-color:  white;
+    transition: 1s;
+    color:  white;
   }
 
   #horizontal-links {
@@ -231,7 +250,7 @@ p {
   }
 
   
-  .topnav > .icon  {
+  .topnav .icon  {
     display: none;
   }
 
@@ -239,11 +258,6 @@ p {
     display: none;
   }
   
-}
-
-.topnav {
-  background-color:#1e1f26;
-  height: 48px
 }
 
 #myLinks {
@@ -264,12 +278,6 @@ p {
 
 #myLinks > a:hover {
   background-color: white;
-}
-
-.topnav > .icon {
-  position: absolute;
-  top: 10px;
-  right: 20px;
 }
 
 .active {
@@ -310,8 +318,12 @@ footer > a {
   font-size: 1.9em;
 }
 
+#cross {
+  display: none;
+}
+
 .fab:hover {
-  transform: scale(2);
+  color: white;
   transition: 1s;
 }
 
