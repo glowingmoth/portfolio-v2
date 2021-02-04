@@ -9,8 +9,14 @@
 </head>
 <body>
   <script src="scripts/main.js"></script>
-  <div class="topnav">
-    <a href="index.html" class="active">Thomas Doig</a>
+  <nav class="topnav">
+    <div id="horizontal-links">
+      <a href="web-development.html">Web Development</a>
+      <a href="game-development.html">Game Development</a>
+      <a href="3d-art.html">3D Art</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
     <div id="myLinks">
       <a href="web-development.html">Web Development</a>
       <a href="game-development.html">Game Development</a>
@@ -19,13 +25,14 @@
       <a href="contact.html">Contact</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  </div>
+      <i class="fa fa-bars" id="burger"></i>
+      <i class="fas fa-times" id="cross"></i>
+    </a>
+  </nav>
   <div class="main-content">
     <h1>Developer | 3D Artist</h1>
     <div class="main-content">
-        <script type="module" src="scripts/3dIndex.js"></script>
+      <!-- <script type="module" src="scripts/3dIndex.js"></script> -->
       <p>
         I bring creativity and technology together.
       </p>
