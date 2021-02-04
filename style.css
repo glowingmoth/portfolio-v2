@@ -122,7 +122,21 @@ form {
   width: 100%;
 }
 
+#button-wrapper {
+  padding: 0;
+}
+
 .send-button {
+  color: black;
+  border-radius: 3px;
+  background-color:  #5a5f73;
+  padding: 5px;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  /* color: white; */
+  transition: 1s;
   padding: 5px;
 }
 
@@ -270,14 +284,16 @@ p {
   top: 48px;
 }
 
+
 #myLinks > a {
   display: block;
-  padding: 5px;
+  padding: 10px 5px;
   text-decoration: none;
 }
 
 #myLinks > a:hover {
-  background-color: white;
+  transition: 1s;
+  color: white;
 }
 
 .active {
