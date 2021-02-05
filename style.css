@@ -36,6 +36,7 @@ canvas {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  /* min-height: 100vh; */
 }
 
 .navbar-wrapper {
@@ -209,6 +210,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   color: #5a5f73;
+}
+
+#index-footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+
 }
 
 p {
