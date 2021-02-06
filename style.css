@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #131417;
   margin: 0;
@@ -48,23 +52,22 @@ canvas {
 
 .basic-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) ;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) ;
 }
 
 .web-dev {
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: minmax(240px, 960px);
+  /* grid-template-columns: minmax(240px, 960px); */
 }
 
 .web-dev img {
-  /* width: 100%; */
-  max-height: 150px;
+  object-fit: cover;
+  max-height: 180px;
 }
+
+
 
 form {
   margin-left: auto;
@@ -142,7 +145,7 @@ form {
   padding: 5px;
 }
 
-.basic-grid > img{
+.basic-grid > img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
@@ -175,18 +178,17 @@ form {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #353535;
   font-size: 1rem;
   color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   height: 100%;
   width: 100%;
+  min-width: 100px;
   border-radius: 4px;
-  /* transition: all 500ms; */
-  overflow: hidden;
-  /* padding: 5px; */
+  /* overflow: hidden; */
+  padding: 15px;
 }
 
 h1 {
