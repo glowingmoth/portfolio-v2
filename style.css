@@ -67,6 +67,15 @@ canvas {
   max-height: 180px;
 }
 
+.web-dev a:hover {
+  transition: 1s;
+  color:  white;
+}
+
+.card a {
+  margin-top: 20px;
+}
+
 
 
 form {
@@ -163,12 +172,6 @@ form {
   max-height: 200px;
 }
 
-.three-d-art {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 960px;
-}
-
 .game-dev {
   margin-left: auto;
   margin-right: auto;
@@ -180,7 +183,7 @@ form {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: #353535;
+  background: #1e1f26;
   font-size: 1rem;
   color: #fff;
   height: 100%;
