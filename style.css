@@ -362,3 +362,6 @@ footer > a {
   transition: 1s;
 }
 
+p {
+  text-align: center;
+}
